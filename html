@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Velha Matemático - 6º Ano</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🎮 Jogo da Velha Matemático</h1>
+    <p class="subtitle">Acerte a conta para conquistar a casa!</p>
+    
+    <div class="turn-indicator" id="turnIndicator">Vez do Jogador: <span id="currentPlayer">X</span></div>
+
+    <div class="board" id="board">
+      <button class="cell" data-index="0">1</button>
+      <button class="cell" data-index="1">2</button>
+      <button class="cell" data-index="2">3</button>
+      <button class="cell" data-index="3">4</button>
+      <button class="cell" data-index="4">5</button>
+      <button class="cell" data-index="5">6</button>
+      <button class="cell" data-index="6">7</button>
+      <button class="cell" data-index="7">8</button>
+      <button class="cell" data-index="8">9</button>
+    </div>
+
+    <button id="restartBtn">Reiniciar Jogo</button>
+  </div>
+
+  <div class="modal" id="mathModal">
+    <div class="modal-content">
+      <h3>❓ Desafio Matemático</h3>
+      <p id="questionText">Quanto é ...?</p>
+      <input type="number" id="answerInput" placeholder="Sua resposta" step="any">
+      <div class="modal-buttons">
+        <button id="submitAnswerBtn">Responder</button>
+      </div>
+      <p id="feedbackText" class="feedback"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
